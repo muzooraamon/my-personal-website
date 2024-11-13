@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Times New Roman, sans-serif;
+            background-size: cover;                         
+            background-position: center; 
+            background-image: url("retreat.jpg");
+            background-color: white;
+            color: #ffffff; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            background-color: rgba(0, 45, 91, 0.8);
+            color: #FFFFFF;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-weight: bold;
+        }
+
+        .menu a {
+            color: #FFFFFF;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+
+        .menu a:hover {
+            color: #B3C7E6;
+            border-bottom: 2px solid #B3C7E6;
+        }
+
+        /* Profile Image */
+        .profile-photo {
+            width: 100px;
+            height: 70px;
+            border-radius: 50%;
+            margin: 20px 0;
+            background-color: #c2d2e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* Section Containers */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+                /* Schools Attended Section */
+        #schools {
+            background-color: #66FFFF;
+        }
+
+        .school-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        .school-grid div {
+            background-color: #1a2e5f; /* Darker blue for each school box */
+            color: black;
+            border: 1px solid #B3C7E6; /* Light blue border */
+            border-radius: 8px;
+            padding: 10px;
+            width: 120px;
+            text-align: center;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+		h2 {
+		color: black;
+		text-align: center;
+		background-color: #FF5733;
+		}
+
+
+        /* Work Experience */
+        #work-experience .container {
+            background-color: #f9f9f9;
+        }
+
+        .experience-item h3 {
+            color: black;
+        }
+
+        .experience-item p {
+            color: black;
+        }
+        /* Hobbies */
+        #hobbies .container {
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+
+        #hobbies ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #hobbies li {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        /* Career Prospects */
+        #career-prospects .container {
+            background-color: #eef5ff;
+            border-left: 5px solid #0056b3;
+        }
+
+        #career-prospects p, #career-prospects li {
+            color: black;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #c2d2e9;
+            font-size: 0.9em;
+            background-color: #002D5B;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p, footer a {
+            color: #c2d2e9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="profile-photo">
+            <img src="AMON.jpg" alt="MY PROFILE PHOTO">
+        </div>
+        <h1>Muzoora Amon - BLIS Student at COCIS</h1>
+        <div class="menu">
+            <a href="#schools">Schools</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#work-experience">Work Experience</a>
+        </div>
+    </header>
+
+    <!-- Schools Attended Section -->
+    <div id="schools" class="container">
+        <h2>SCHOOLS ATTENDED</h2>
+        <div class="school-grid">
+            <div><a href="http://www.rwenanuuraparentsprimaryschool.ac.ug"> Rwenanuura Parents Primary School</a></div>
+            <div><a href="https://kigezicollegebutobere.sc.ug">Kigezi College Butobere</a></div>
+            <div><a href="http://www.kigezihigh.sc.ug">Kigezi High School</a></div>
+            <div><a href="http://www.rwentobohighschool.ac.ug"> Rwentobo High School</a></div>
+            <div><a href="http://www.mak.ac.ug">Makerere University</a></div>
+        </div>
+    </div>
+
+    <!-- Work Experience Section -->
+    <div id="work-experience" class="container">
+        <h2>WORK EXPERIENCE</h2>
+        <div class="experience-item">
+            <h3>Data Intern - Parliament of the Republic of Uganda</h3>
+            <p class="duration">June 2024 - 1st August 2024</p>
+            <p>Assisted researchers with data analysis and visualization.</p>
+            <p>Developed and maintained databases for research projects.</p>
+            <p>Conducted literature reviews and summarized research findings.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Information Specialist - Corporate Information Centre, Ntungamo</h3>
+            <p class="duration">January 2019 - September 2019</p>
+            <p>Responsible for cataloging, digitizing materials, and supporting research activities.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Knowledge Management Assistant - RUSCA Bank, Mbarara</h3>
+            <p class="duration">July 2023 - March 2024</p>
+            <p>Assisted with archival tasks, maintained document databases, and conducted training.</p>
+        </div>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div id="hobbies" class="container">
+        <h2>HOBBIES</h2>
+        <ul>
+            <li>Reading</li>
+            <li>Traveling</li>
+            <li>Photography</li>
+            <li>Praising and Worshipping</li>
+        </ul>
+    </div>
+
+    <!-- Career Prospects Section -->
+    <div id="career-prospects" class="container">
+        <h2>CAREER PROSPECTS</h2>
+        <p>As a student specializing in Data and Knowledge Management, I aim to leverage my skills in data analysis, knowledge management, and digital libraries. Here are my career prospects:</p>
+        <ul>
+            <li>Knowledge Manager - Design and maintain knowledge management systems.</li>
+            <li>Data Analyst - Use data analysis to drive informed decisions.</li>
+            <li>Digital Asset Manager - Oversee management and accessibility of digital assets.</li>
+            <li>Information Systems Specialist - Design and maintain information systems and databases.</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: <a href="mailto:muzooraamon416@gmail.com">muzooraamon416@gmail.com</a></p>
+        <p>Follow me on <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
